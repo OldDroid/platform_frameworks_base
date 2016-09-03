@@ -66,7 +66,7 @@ public class SchedulingPolicyService extends ISchedulingPolicyService.Stub {
         final int callingUid = Binder.getCallingUid();
         switch (callingUid) {
         case Process.AUDIOSERVER_UID: // fastcapture, fastmixer
-        case Process.CAMERASERVER_UID: // camera high frame rate recording
+        case Process.MEDIA_UID: // camera
             return true;
         default:
             return false;
