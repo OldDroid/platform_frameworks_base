@@ -1242,9 +1242,6 @@ public class AppOpsService extends IAppOpsService.Stub {
                             } else if ("audioserver".equals(packageName)) {
                                 pkgUid = Process.AUDIOSERVER_UID;
                                 isPrivileged = false;
-                            } else if ("cameraserver".equals(packageName)) {
-                                pkgUid = Process.CAMERASERVER_UID;
-                                isPrivileged = false;
                             }
                         }
                     } catch (RemoteException e) {
